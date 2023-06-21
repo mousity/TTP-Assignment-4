@@ -15,9 +15,16 @@ const posters = [
       title: 'Reward Yourself!',
       quote: 'It\'s okay to take a break once in a while!',
     },
+    {
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIb7dssf0Fl7Wyz7BLf-WT3EDxZ2WfP1R26pwdYrcDgA&s',
+      title: 'Chase the Cheese!',
+      quote: 'You can reach it someday!',
+    },
+    
+    
   ];
 
-  const button = document.getElementById('submit');
+  const button = document.getElementById('randomize');
   const images = document.getElementById('poster-image');
   const titles = document.getElementById('poster-title');
   const quotes = document.getElementById('poster-quote');
@@ -27,11 +34,13 @@ const posters = [
 
   function randomize(posters, images, titles, quotes) {
     console.log(images);
-    let num = (Math.random() * posters.length);
-    console.log(posters);
+    let num = (Math.round(Math.random() * (posters.length - 1)));
+    console.log(num);
     images.setAttribute("src", posters[num].image);
     titles.textContent = posters[num].title;
     quotes.textContent= posters[num].quote;
   }
 
-  button.addEventListener("click", randomize(posters, images, titles, quotes));
+  button.addEventListener("click", function() {randomize(posters, images, titles, quotes)});
+
+  
