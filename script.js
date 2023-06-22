@@ -20,14 +20,24 @@ const posters = [
       title: 'Chase the Cheese!',
       quote: 'You can reach it someday!',
     },
+    {
+      image: 'https://images.wagwalkingweb.com/media/daily_wag/sense_guides/intro/1543129488.45/can-dogs-know-how-to-play-fetch_intro.jpg',
+      title: 'Work for it!',
+      quote: 'Are you willing to chase it, no matter how far it goes?',
+    },
     
-    
+    {
+      image: 'https://img.apmcdn.org/be77ee224f029a4cc5146a7714429e421f196bf5/normal/e8232d-20141118-blackbearfamily.jpg',
+      title: 'Get your feet wet!',
+      quote: 'Trying something new is always worth your time',
+    },
   ];
 
   const button = document.getElementById('randomize');
   const images = document.getElementById('poster-image');
   const titles = document.getElementById('poster-title');
   const quotes = document.getElementById('poster-quote');
+  let prevNum = 100;
 
   console.log(images);
   console.log(posters[0].image);
@@ -35,6 +45,10 @@ const posters = [
   function randomize(posters, images, titles, quotes) {
     console.log(images);
     let num = (Math.round(Math.random() * (posters.length - 1)));
+    while(num == prevNum){
+      num = (Math.round(Math.random() * (posters.length - 1)))
+    }
+    prevNum = num;
     console.log(num);
     images.setAttribute("src", posters[num].image);
     titles.textContent = posters[num].title;
