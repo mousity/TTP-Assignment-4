@@ -13,19 +13,34 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: aquamarine;
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/12/23/45/checks-937564_1280.jpg);
+    border-radius: 15%;
+    border: 10px rgb(3, 33, 98);
+    border-style: dashed;
     padding: 20px 20px;
-    width: 50%;
+    width: 40%;
     height: auto;
 }
 
 #poster-image {
-    width: 50%;
+    width: 70%;
     height: auto;
+    border-radius: 15%;
 }
 
 .custom-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+#poster-title {
+    text-decoration: underline overline;
+    font-size: xx-large;
+    color: rgb(3, 33, 98);
+}
+
+#poster-quote {
+    font-size: x-large;
+    color: rgb(3, 33, 98);
 }
