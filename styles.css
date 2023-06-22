@@ -1,3 +1,27 @@
+#title {
+    display: flex;
+    flex-direction: column;
+    color: rgb(3, 33, 98);
+    padding: 10px 10px;
+    background-color: rgb(254, 255, 179);
+    border-radius: 15%;
+    border-color: rgb(252, 179, 44);
+    border-style: solid;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(254, 255, 179);
+    margin-top: 10px;
+    padding: 10px 10px;
+    border-radius: 15%;
+    border-color: rgb(252, 179, 44);
+    width: 90%;
+    border-style: solid;
+}
+
 .poster {
     display: flex;
     flex-direction: column;
@@ -32,15 +56,40 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-image: url(https://cdn.pixabay.com/photo/2015/09/12/23/45/checks-937564_1280.jpg);
+    border-radius: 15%;
+    border: 10px rgb(3, 33, 98);
+    border-style: dashed;
+    padding: 20px 20px;
 }
 
 #poster-title {
     text-decoration: underline overline;
     font-size: xx-large;
     color: rgb(3, 33, 98);
+    margin-bottom: 0px;
 }
 
 #poster-quote {
     font-size: x-large;
     color: rgb(3, 33, 98);
 }
+
+button {
+    background-color: rgb(103, 151, 255);
+    border-color: 10px #0d1263;
+    color: white;
+    border-radius: 20%;
+    padding: 20px 30px;
+
+}
+
+button:active {
+    background-color: #0d1263;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+
+body {
+    background-image: url(https://clipart-library.com/images/kiKogn4aT.png);
+  }
